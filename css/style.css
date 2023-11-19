@@ -7,15 +7,18 @@
     text-decoration: none;
 
 }
-
+body {
+    font-size: 90%;
+    
+}
 section{
-    width: 100%;
-    height: 100vh;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .paginas {
+    font-size: 1em;
     max-width: 800px;
     margin: 20px;
     background-color: #e7e7e7;
@@ -38,9 +41,24 @@ section{
     background-color: #333333;
     text-transform: uppercase;
     padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.paginas a:hover {
+background-color: #525252;;
 }
 .flex {
     display: flex;
     justify-content: end;
     width: 100%;
 }
+
+
+
+@media (max-width: 600px) {
+  body {
+font-size: 75%;
+  }
+  }
